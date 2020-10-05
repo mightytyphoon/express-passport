@@ -1,0 +1,39 @@
+
+<div style="display: grid; align-content: center; justify-items: center; height: 100vh;gap: 20px">
+    <button onclick="autofill()">auto fill form</button>
+    <input id="email" placeholder="email">
+    <input id="pass" placeholder="password">
+    <button onclick="connect()">connect</button>
+</div>
+
+
+<script>
+    const DOMAIN = 'http://localhost:3000';
+
+    // we create an easy vanilla js post function by registering it in window
+    window.post = function(url, data) {
+            return fetch(url, {
+                method: "POST", // post method
+                headers: {
+                    'Content-type' : 'application/json' // important, type of the data in the request
+                },
+                body: JSON.stringify(data)}); // we change the js object in JSON
+    }
+
+    // connect is an async function as we need to wait the response from the API
+    var connect = async() => {
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('pass').value;
+
+        console.log(JSON.stringify({email, password}));
+
+        const result = await post(DOMAIN + '/login', {email , password});
+        console.log(result);
+        location.href = result.url;
+    }
+
+    var autofill = () => {
+        document.getElementById('email').value = 'test@test.com';
+        document.getElementById('pass').value = '123';
+    }
+</script>
