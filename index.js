@@ -102,9 +102,10 @@ app.get('/login' , (req, res) => {
 })
 
 app.get('/logout' , (req,res) => {
-    req.logOut();
-    res.redirect('/');
-})
+    console.log(JSON.stringify(req.user) + ' logout') // add event in logs
+    req.logOut(); // log out
+    res.redirect('/'); // redirect home
+});
 
 // authorised endpoint. Must be logged into access this endpoint
 // this is where we use connect-ensure-login !
