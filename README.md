@@ -19,3 +19,6 @@
    * config of passport with local strategy : lines 41 -> 78
    * mounting endpoints : lines 80 -> 110
    * connect ensure login : line 110
+
+# Donate
+if you want to support the creator : https://www.paypal.com/donate/?cmd=_donations&business=VA8UVVE26BDPJ&currency_code=EUR
