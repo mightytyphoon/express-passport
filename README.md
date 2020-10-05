@@ -1,8 +1,8 @@
 # Very Quick Start
-## type > "npm i && node ."
+### type : "npm run i" to install & run app directly
 
-1. type *npm i* from root in command line to install everything
-2. type *node .* to launch the server on port 3000
+1. type *npm i* or *npm run install* from root in command line to install everything
+2. type *node .* or *npm run start* to launch the server on port 3000 
    * home -> http://localhost:3000
    * login -> http://localhost:3000/login
    * auth required -> http://localhost:3000/authrequired
