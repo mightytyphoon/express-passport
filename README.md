@@ -21,4 +21,4 @@
    * connect ensure login : line 110
 
 # Donate
-if you want to support the creator : https://www.paypal.com/donate/?cmd=_donations&business=VA8UVVE26BDPJ&currency_code=EUR
+if you want to support the creator : [Donate with PayPal](https://www.paypal.com/donate/?cmd=_donations&business=VA8UVVE26BDPJ&currency_code=EUR). 
