@@ -9,7 +9,9 @@
     "start": "node ."
   },
   "author": "mightytyphoon",
-  "repository": {"url": "https://github.com/mightytyphoon/express-passport"},
+  "repository": {
+    "url": "https://github.com/mightytyphoon/express-passport"
+  },
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
