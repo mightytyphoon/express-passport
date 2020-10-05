@@ -1,6 +1,7 @@
 # Very Quick Start
 ### type : "npm run i" to install & run app directly
 
+# Quick Start
 1. type *npm i* or *npm run install* from root in command line to install everything
 2. type *node .* or *npm run start* to launch the server on port 3000 
    * home -> http://localhost:3000
@@ -9,7 +10,6 @@
    * logout -> http://localhost:3000/logout
 
 # Steps for creation of this repo
-
 1. npm init (create project)
 2. npm i --save express body-parser passport passport-local connect-ensure-login express-session uuid 
 3. create index.js
